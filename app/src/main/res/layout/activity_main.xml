@@ -4,34 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="100dp"
     tools:context=".MainActivity">
-
+<!--    android:padding="100dp"-->
     <RelativeLayout
+        android:padding="15dp"
         android:id="@+id/header"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Task List"
-            android:textColor="#145374"
+            android:textColor="#00334E"
             android:textSize="30dp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/header"
         android:layout_marginLeft="1px"
         android:layout_marginRight="2px"
-        android:background="#F6F5F5">
+        android:background="#F6F5F5"
+        android:padding="20dp">
 
         <RelativeLayout
             android:id="@+id/t1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <CheckBox
@@ -40,8 +41,9 @@
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:text="Task 1"
-                android:textColor="#00334E"
-                android:textSize="23dp" />
+                android:textColor="#145374"
+                android:textSize="23dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/deleteT1"
@@ -50,12 +52,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:text="Delete"
-                android:textSize="23dp" />
+                android:textSize="23dp"
+                android:textColor="#EE6F57"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/t2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/t1">
 
@@ -64,8 +67,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Task 2"
-                android:textColor="#00334E"
-                android:textSize="23dp" />
+                android:textColor="#145374"
+                android:textSize="23dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/deleteT2"
@@ -74,12 +78,13 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:text="Delete"
-                android:textSize="23dp" />
+                android:textSize="23dp"
+                android:textColor="#EE6F57"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/t3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/t2">
 
@@ -89,8 +94,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Task 3"
-                android:textColor="#00334E"
-                android:textSize="23dp" />
+                android:textColor="#145374"
+                android:textSize="23dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/deleteT3"
@@ -99,7 +105,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="8dp"
                 android:text="Delete"
-                android:textSize="23dp" />
+                android:textSize="23dp"
+                android:textColor="#EE6F57"/>
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>
