@@ -4,32 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="100dp"
     tools:context=".MainActivity">
-<!--    part 1-->
-   <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task List"
+            android:textColor="#145374"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        android:layout_centerInParent="true"
-        android:textSize="120px"
-        android:textStyle="bold|italic"
-        android:textColor="@color/black"
-        android:id="@+id/helloTxt"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="2px"
+        android:background="#F6F5F5">
 
-        />
+        <RelativeLayout
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/helloTxt"
-        android:textColor="@color/white"
-        android:text="click me!"
-        android:id="@+id/btnX"
-        android:layout_marginTop="15dp"
-        android:onClick="onbtnXClick"
+            <CheckBox
+                android:id="@+id/task1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Task 1"
+                android:textColor="#00334E"
+                android:textSize="23dp" />
 
-        />
+            <TextView
+                android:id="@+id/deleteT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="Delete"
+                android:textSize="23dp" />
+        </RelativeLayout>
 
+        <RelativeLayout
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1">
 
+            <CheckBox
+                android:id="@+id/task2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task 2"
+                android:textColor="#00334E"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/deleteT2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="Delete"
+                android:textSize="23dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t2">
+
+            <CheckBox
+
+                android:id="@+id/task3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task 3"
+                android:textColor="#00334E"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/deleteT3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="Delete"
+                android:textSize="23dp" />
+        </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>
